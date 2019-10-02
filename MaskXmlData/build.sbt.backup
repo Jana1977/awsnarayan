@@ -1,0 +1,21 @@
+name := "MaskXmlData"
+
+version := "0.1"
+
+scalaVersion := "2.11.12"
+
+mainClass in assembly := Some("nd.app.Main")
+
+test in assembly := {}
+
+libraryDependencies += "com.databricks" %% "spark-xml" % "0.6.0"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.3.0"
+
+dependencyOverrides += "com.fasterxml.jackson.core" % "jackson-core" % "2.9.5"
+dependencyOverrides += "com.fasterxml.jackson.core" % "jackson-databind" % "2.9.5"
+dependencyOverrides += "com.fasterxml.jackson.module" % "jackson-module-scala_2.11" % "2.9.5"
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}

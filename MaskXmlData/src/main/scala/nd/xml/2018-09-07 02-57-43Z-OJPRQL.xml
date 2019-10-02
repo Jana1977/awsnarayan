@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnr  xmlns="http://gdsx.com/PnrDataPush.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <PNRid>999999999999</PNRid>
+    <recordLocator>OJPRQL</recordLocator>
+    <GDS>6</GDS>
+    <platformID>NA</platformID>
+    <BookingDateTime>9/6/2018 9:54:00 PM</BookingDateTime>
+    <etrHits>0</etrHits>
+    <Travelers>
+        <Traveler>
+            <firstName>WEI</firstName>
+            <middleName>SEONG</middleName>
+        </Traveler>
+    </Travelers>
+    <Segments>
+        <Segment  xsi:type="AirSegment">
+            <segmentNumber>1</segmentNumber>
+            <TDSValidated>2</TDSValidated>
+          </Segment>
+    </Segments>
+</pnr>
